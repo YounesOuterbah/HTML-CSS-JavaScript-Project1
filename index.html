@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="setting-box">
+      <div class="clicked">
+        <i class="fa-solid fa-gear fa-spin gear"></i>
+      </div>
+      <div class="setting-option">
+        <div class="options">
+          <h4>Pick a Color</h4>
+          <ul class="clist">
+            <li class="active" data-color="#ff085a">Raspberry Pink</li>
+            <li data-color="rgb(0, 174, 255)">Light Blue</li>
+            <li data-color="rgb(132, 0, 255)">Purple</li>
+            <li data-color="rgb(255, 174, 0)">Orange</li>
+            <li data-color="rgb(67,153,73)">Green</li>
+          </ul>
+        </div>
+        <div class="options">
+          <h4>Random Backgrounds</h4>
+          <div class="random-bg">
+            <span class="yes active" data-bg="yes">Yes</span>
+            <span class="no" data-bg="no">No</span>
+          </div>
+        </div>
+        <div class="options">
+          <h4>Show Bullets</h4>
+          <div class="bullet-op">
+            <span class="yes active" data-display="yes">Show</span>
+            <span class="no" data-display="no">Hide</span>
+          </div>
+        </div>
+        <button class="reset-op">Reset Options</button>
+      </div>
+    </div>
+    <div class="landing-section">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="header">
+          <div class="logo">XniceScript</div>
+          <div class="links-container">
+            <ul class="links">
+              <li><a href="#about" class="active">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#timeline">Timeline</a></li>
+              <li><a href="#featuers">Featuers</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+            <i class="fa-solid fa-bars menu"></i>
+          </div>
+        </div>
+        <div class="intro-txt">
+          <h1>We Are <span>Creative</span> Agency</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
+            fugiat nulla ad delectus id aspernatur repellendus? Iusto nostrum
+            magnam odit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="about-us" id="about">
+        <div class="info-box">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            repellendus debitis ad earum excepturi maiores reprehenderit
+            voluptate consectetur cum, aspernatur porro quidem. Repellat eveniet
+            ut aperiam laborum sed deserunt aut!
+          </p>
+        </div>
+        <div class="img-box">
+          <img src="imgs/about-us.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="skills" id="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <div class="skill-box">
+          <div class="name">HTML</div>
+          <div class="progress">
+            <span data-prog="90%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="name">CSS</div>
+          <div class="progress">
+            <span data-prog="70%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="name">JavaScript</div>
+          <div class="progress">
+            <span data-prog="50%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery" id="gallery">
+      <div class="container">
+        <h2>Our Gallery</h2>
+        <div class="img-box">
+          <img src="imgs/01.jpg" alt="Image One" />
+          <img src="imgs/02.jpg" alt="Image Two" />
+          <img src="imgs/03.jpg" alt="Image Three" />
+          <img src="imgs/04.jpg" alt="Image Four" />
+          <img src="imgs/05.jpg" alt="Image Five" />
+          <img src="imgs/moon.png" alt="Image Six" />
+          <img src="imgs/07.jpg" alt="Image Seven" />
+          <img src="imgs/08.jpg" alt="Image Eight" />
+          <img src="imgs/09.jpg" alt="Image Nine" />
+          <img src="imgs/10.jpg" alt="Image Ten" />
+        </div>
+      </div>
+    </div>
+    <div class="nav-bullets">
+      <div class="bullet" data-section=".about-us">
+        <div class="tool-tip">About Us</div>
+      </div>
+      <div class="bullet" data-section=".skills">
+        <div class="tool-tip">My Skills</div>
+      </div>
+      <div class="bullet" data-section=".gallery">
+        <div class="tool-tip">Our Gallery</div>
+      </div>
+      <div class="bullet" data-section=".timeline">
+        <div class="tool-tip">Timeline</div>
+      </div>
+      <div class="bullet" data-section=".featuers">
+        <div class="tool-tip">Our Featuers</div>
+      </div>
+      <div class="bullet" data-section=".testi">
+        <div class="tool-tip">Testimonials</div>
+      </div>
+    </div>
+    <div class="timeline" id="timeline">
+      <div class="container">
+        <div class="timeline-content">
+          <div class="year">2018</div>
+          <div class="left">
+            <div class="content">
+              <h3>Test Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit at cupiditate reprehenderit, quas veniam nulla quos
+                distinctio labore, laboriosam natus, porro qui! Illo earum rem
+                tenetur amet molestias similique cupiditate.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="right">
+              <div class="content">
+                <h3>Test Heading</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit at cupiditate reprehenderit, quas veniam nulla quos
+                  distinctio labore, laboriosam natus, porro qui! Illo earum rem
+                  tenetur amet molestias similique cupiditate.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="year">2016</div>
+          <div class="left">
+            <div class="content">
+              <h3>Test Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit at cupiditate reprehenderit, quas veniam nulla quos
+                distinctio labore, laboriosam natus, porro qui! Illo earum rem
+                tenetur amet molestias similique cupiditate.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left">
+            <div class="content">
+              <h3>Test Heading</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit at cupiditate reprehenderit, quas veniam nulla quos
+                distinctio labore, laboriosam natus, porro qui! Illo earum rem
+                tenetur amet molestias similique cupiditate.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix">
+            <div class="right">
+              <div class="content">
+                <h3>Test Heading</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Suscipit at cupiditate reprehenderit, quas veniam nulla quos
+                  distinctio labore, laboriosam natus, porro qui! Illo earum rem
+                  tenetur amet molestias similique cupiditate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featuers" id="featuers">
+      <h2>Our featuers</h2>
+      <div class="container">
+        <div class="feat-box">
+          <img src="imgs/Icon_01.png" alt="" />
+          <h4>Analyzing</h4>
+          <p>
+            An analytical summary of a book or a paper is the first step to
+            writing an essay or one's own research
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/Icon_02.png" alt="" />
+          <h4>Development</h4>
+          <p>
+            Development is very growth-oriented, based on sectors or particular
+            areas in the economy which produce or generate growth
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/Icon_03.png" alt="" />
+          <h4>Coloring</h4>
+          <p>
+            colour, Aspect of any object that may be described in terms of hue,
+            lightness, and saturation.
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/Icon_04.png" alt="" />
+          <h4>Statistics</h4>
+          <p>
+            gives information about the data in a sample. It can help understand
+            the values better
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/Icon_05.png" alt="" />
+          <h4>Marketing</h4>
+          <p>
+            Marketing focuses on the fundamental practices that every company
+            has to carry out - identifying customers, researching their needs
+            and preferences
+          </p>
+        </div>
+        <div class="feat-box">
+          <img src="imgs/Icon_06.png" alt="" />
+          <h4>Design</h4>
+          <p>
+            refers to the process of originating and developing a plan for a
+            product, structure, system, or component.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="testi" id="testimonials">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="boxs">
+          <div class="testi-box">
+            <p>
+              <q>
+                Life Is Short Start Learning,<br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </q>
+            </p>
+            <div class="info">
+              <img src="imgs/theGoat.jpg" style="width: 80px" alt="" />
+              <h4>Osama Elzero</h4>
+              <p>The GOAT</p>
+            </div>
+          </div>
+          <div class="testi-box">
+            <p>
+              <q>
+                do the hard work especially when you don't feel like it,
+                <br />
+                Suscipit at cupiditate reprehenderit,
+              </q>
+            </p>
+            <div class="info">
+              <img src="imgs/adonis.png" style="width: 80px" alt="" />
+                <h4>Hamza Ahmed</h4>
+                <p>Adonis</p>
+            </div>
+          </div>
+          <div class="testi-box">
+            <p>
+              <q>
+                Whats The Color Of Your Bugatti,<br />
+                consectetur adipisicing elit. Suscipit at cupiditate
+                reprehenderit,
+              </q>
+            </p>
+            <div class="info">
+              <img src="imgs/andrew.jpeg" style="width: 80px" alt="" />
+              <h4>Andrew Tate</h4>
+              <p>TopG</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="">
+          <div class="left">
+            <input type="text" name="username" placeholder="Your Name" />
+            <input type="text" name="number" placeholder="Your Number" />
+            <input type="email" name="email" placeholder="Your Email" />
+            <input type="text" name="subject" placeholder="Your Subject" />
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer">Created With ❤️ By Younes Outerbah</div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
